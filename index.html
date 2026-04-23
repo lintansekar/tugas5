@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBite - Healthy Catering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#F8FAF8] text-gray-800">
+
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-green-600 tracking-tight">GreenBite.</div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-green-600 transition">Home</a>
+                <a href="#about" class="hover:text-green-600 transition">About</a>
+                <a href="#menu" class="hover:text-green-600 transition">Menu</a>
+                <a href="#reviews" class="hover:text-green-600 transition">Reviews</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="https://instagram.com/USERNAME_KAMU" target="_blank" class="text-gray-600 hover:text-pink-600 transition text-xl">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <button class="bg-green-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-green-700 transition">Order Now</button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="container mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <span class="bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider">Fresh & Organic</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-green-900 mt-6 leading-tight">
+                    Nutrisi Lezat, <br><span class="text-green-600">Hidup Lebih Sehat.</span>
+                </h1>
+                <p class="text-gray-600 mt-6 text-lg max-w-lg">
+                    Nikmati catering premium dengan bahan organik pilihan yang dirancang khusus untuk menjaga energi dan kesehatan tubuh Anda setiap hari.
+                </p>
+                <div class="mt-10 flex gap-4">
+                    <a href="#menu" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-green-200 transition">Cek Koleksi Menu</a>
+                    <a href="#about" class="bg-white border-2 border-gray-100 hover:border-green-600 px-8 py-4 rounded-xl font-bold transition">Tentang Kami</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 relative">
+                <div class="absolute -inset-4 bg-green-100 rounded-full filter blur-3xl opacity-50"></div>
+                <img src="background.jpg" alt="Healthy Bowl" class="relative rounded-3xl shadow-2xl">
+            </div>
+        </div>
+    </header>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-green-900">Mengapa GreenBite Spesial?</h2>
+            <div class="w-20 h-1.5 bg-green-500 mx-auto mt-4 rounded-full"></div>
+            <p class="mt-8 text-gray-600 max-w-2xl mx-auto leading-relaxed text-lg">
+                Kami bukan sekadar catering. GreenBite menggabungkan ilmu nutrisi dengan cita rasa kuliner tinggi. Semua bahan kami berasal dari petani lokal organik, diproses secara bersih tanpa MSG, dan disiapkan segar sesaat sebelum sampai di meja Anda.
+            </p>
+        </div>
+    </section>
+
+    <section id="menu" class="py-20 bg-[#F0F4F0]">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-green-900 text-center">Menu Unggulan Kami</h2>
+                    <p class="text-gray-500 mt-2 text-center">Pilihan sehat untuk performa maksimalmu.</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition group">
+                    <div class="h-64 overflow-hidden">
+                        <img src="salmon.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Salad">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">Salmon Avocado</h3>
+                        <p class="text-gray-500 text-sm mt-2">Kaya akan Omega-3 dan serat dari alpukat segar.</p>
+                        <div class="mt-6 flex justify-between items-center">
+                            <span class="text-2xl font-bold text-green-600">Rp 65.000</span>
+                            <button class="p-2 bg-green-50 text-green-600 rounded-lg hover:bg-green-600 hover:text-white transition">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition group">
+                    <div class="h-64 overflow-hidden">
+                        <img src="chicken.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Chicken">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">Grilled Pesto Chicken</h3>
+                        <p class="text-gray-500 text-sm mt-2">Dada ayam tanpa kulit dengan saus basil organik.</p>
+                        <div class="mt-6 flex justify-between items-center">
+                            <span class="text-2xl font-bold text-green-600">Rp 55.000</span>
+                            <button class="p-2 bg-green-50 text-green-600 rounded-lg hover:bg-green-600 hover:text-white transition">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition group">
+                    <div class="h-64 overflow-hidden">
+                        <img src="quinoa.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Vegan">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">Quinoa Buddha Bowl</h3>
+                        <p class="text-gray-500 text-sm mt-2">Protein nabati lengkap dengan sayuran panggang.</p>
+                        <div class="mt-6 flex justify-between items-center">
+                            <span class="text-2xl font-bold text-green-600">Rp 48.000</span>
+                            <button class="p-2 bg-green-50 text-green-600 rounded-lg hover:bg-green-600 hover:text-white transition">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white" id="reviews">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-green-900 mb-12">Apa Kata Mereka?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-8 bg-[#F8FAF8] rounded-2xl border border-green-50">
+                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-600 italic">"Menu GreenBite ngebantu banget buat diet kantor saya. Gak perlu repot masak tapi tetep sehat!"</p>
+                    <p class="mt-6 font-bold text-green-900">— Sarah K.</p>
+                </div>
+                <div class="p-8 bg-[#F8FAF8] rounded-2xl border border-green-50">
+                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-600 italic">"Rasanya bintang lima! Ayamnya juicy banget dan bumbunya kerasa meskipun tanpa MSG."</p>
+                    <p class="mt-6 font-bold text-green-900">— dr. Reihan</p>
+                </div>
+                <div class="p-8 bg-[#F8FAF8] rounded-2xl border border-green-50">
+                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-600 italic">"Pengiriman selalu on-time. Sayurannya beneran masih kriuk dan segar pas sampai."</p>
+                    <p class="mt-6 font-bold text-green-900">— Andi Perkasa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <footer class="bg-green-900 text-white py-16">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center gap-2 mb-6">
+                    <div class="w-8 h-8 bg-white rounded flex items-center justify-center text-green-900 font-bold">G</div>
+                    <span class="text-2xl font-bold tracking-tight">GreenBite</span>
+                </div>
+                <p class="text-green-200 max-w-sm mb-6">Partner gaya hidup sehatmu melalui sajian makanan yang bersih, organik, dan penuh nutrisi.</p>
+                <div class="flex gap-4">
+                    <a href="https://www.instagram.com/lintansaa?igsh=eHZuajQ3bGY5MXFv" target="_blank" class="w-10 h-10 bg-green-800 rounded-full flex items-center justify-center hover:bg-green-600 transition">IG</a>
+                    <a href="https://wa.me/+62 813-9139-8729" target="_blank" class="w-10 h-10 bg-green-800 rounded-full flex items-center justify-center hover:bg-green-600 transition">WA</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6">Kontak Kami</h4>
+                <ul class="space-y-4 text-green-100">
+                    <li>📍 Jl. Kebun Hijau No. 12, Jakarta</li>
+                    <li>📞 +62 813-9139-8729</li>
+                    <li>📧 hello@greenbite.id</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6">Jam Operasional</h4>
+                <ul class="space-y-4 text-green-100">
+                    <li>Senin - Jumat: 08.00 - 19.00</li>
+                    <li>Sabtu: 08.00 - 15.00</li>
+                    <li>Minggu: Libur</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 border-t border-green-800 mt-12 pt-8 text-center text-green-400 text-sm">
+            <p>&copy; 2026 GreenBite Catering.</p>
+        </div>
+    </footer>
